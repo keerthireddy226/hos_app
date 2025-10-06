@@ -1,0 +1,7 @@
+<h1>Hello <%= @patient.name %>,</h1>
+
+<p>Your appointment with <%= @doctor.name %> has been <strong>confirmed</strong>.</p>
+<p><strong>Date & Time:</strong> <%= @appointment.date.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y at %I:%M %p") %></p>
+<p><strong>Hospital:</strong> <%= @hospital.name %></p>
+
+<p>Thank you!</p>
